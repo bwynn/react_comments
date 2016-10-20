@@ -1,0 +1,46 @@
+{
+  "name": "react_comments",
+  "version": "1.0.0",
+  "description": "Stringing up react.js comments tutorial into a mongo express node back end.",
+  "main": "server.js",
+  "scripts": {
+    "watch": "webpack -d --watch",
+    "build": "webpack",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bwynn/react_comments.git"
+  },
+  "author": "Brian Wynn",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/bwynn/react_comments/issues"
+  },
+  "homepage": "https://github.com/bwynn/react_comments#readme",
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "mongoose": "^4.6.4",
+    "morgan": "^1.7.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-remarkable": "^1.1.1",
+    "remarkable": "^1.7.1"
+  }
+}
