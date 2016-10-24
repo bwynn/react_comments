@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Remarkable from 'react-remarkable';
 
-var md = new Remarkable();
-
-var rawMarkup = function() {
-    var rawMarkup = md.render(this.props.children.toString());
-    return { __html: rawMarkup };
-};
+var Remarkable = require('remarkable');
 
 class Comment extends Component {
+    rawMarkup() {
+        var md = new Remarkable();
+        var rawMarkup = md.render(this.props.children.toString());
+        return {__html: rawMarkup}
+    }
+
     render() {
         return (
             <div className="comment">
@@ -20,3 +20,5 @@ class Comment extends Component {
         );
     }
 }
+
+export default Comment
